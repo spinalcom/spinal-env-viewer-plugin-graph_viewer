@@ -49,7 +49,7 @@ class SideBarOpenGraphViewer extends SpinalContextApp {
     console.log("action clicked");
     const server_id = spinal.spinalGraphService.getRealNode(option.selectedNode.id.get())._server_id;
     let myWindow = window.open("", "");
-    let location = "/html/graph/?id=" + server_id;
+    let location = "/html/graph-inspector/?id=" + server_id;
     myWindow.document.location = location;
     myWindow.focus();
   }
